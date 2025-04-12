@@ -28,15 +28,24 @@ cd erp
 cd erp
 npm run dev
 ```
+```bash
+cd ..
+```
 ### 3. For Node js 
 ```bash
 cd nodejs-backend
 npm run dev
+```
+```bash
+cd ..
 ```
 
 ### 4. For Spring 
 ```bash
 cd java-backend
 ./mvnw spring-boot:run
+```
+```bash
+cd ..
 ```
 
