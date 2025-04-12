@@ -22,10 +22,21 @@
 ```bash
 git clone https://github.com/yourusername/erp-system.git
 cd erp
+```
+### 2. For Fronted 
+```bash
+cd erp
 npm run dev
-cd ..
-cd backend-nodejs
+```
+### 3. For Node js 
+```bash
+cd nodejs-backend
 npm run dev
-cd ..
-cd backend-java
+```
+
+### 4. For Spring 
+```bash
+cd java-backend
+./mvnw spring-boot:run
+```
 
