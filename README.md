@@ -21,4 +21,11 @@
 
 ```bash
 git clone https://github.com/yourusername/erp-system.git
-cd erp-system
+cd erp
+npm run dev
+cd ..
+cd backend-nodejs
+npm run dev
+cd ..
+cd backend-java
+
