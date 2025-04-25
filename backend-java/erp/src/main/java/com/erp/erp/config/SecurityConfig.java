@@ -1,7 +1,5 @@
 package com.erp.erp.config;
 
-import java.beans.Customizer;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,17 +12,15 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http)
-    throws Exception{
+            throws Exception {
         http
-        .csrf(csrf -> csrf.disable()) // Disable CSRF for API
-        .authorizeHttpRequests(auth -> auth
-        .requestMatchers("/api/**").permitAll() // Allow /auth/signup, /auth/login etc.
-        )
-        .formLogin().disable();
+                .csrf(csrf -> csrf.disable()) // Disable CSRF for API
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/api/**").permitAll() // Allow /auth/signup, /auth/login etc.
+                )
+                .formLogin().disable();
 
-
-    
         return http.build();
     }
-    
+
 }

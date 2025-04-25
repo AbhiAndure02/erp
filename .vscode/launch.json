@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.erp/com.erp.App",
+            "projectName": "client"
+        },
+        {
+            "type": "java",
+            "name": "ErpApplication",
+            "request": "launch",
+            "mainClass": "com.erp.erp.ErpApplication",
+            "projectName": "erp"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/index.ts",
+            "preLaunchTask": "npm: build"
+        }
+    ]
+}

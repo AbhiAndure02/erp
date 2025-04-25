@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+    <?import javafx.scene.control.*?>
+    <?import javafx.scene.image.*?>
+    <?import javafx.scene.shape.*?>
+    
+    <StackPane xmlns:fx="http://javafx.com/fxml"
+               fx:controller="com.erp.LoginController"
+               stylesheets="@style.css"
+               styleClass="login-root"
+               prefWidth="800" prefHeight="600">
+        
+        <!-- Background circles decoration -->
+   
+        
+        <VBox fx:id="formBox"
+              alignment="CENTER"
+              spacing="15"
+              styleClass="login-box"
+              prefWidth="600" prefHeight="200">
+            
+            <!-- Logo placeholder - replace with your actual logo -->
+            
+            
+            <VBox alignment="CENTER"> 
+            <Label text="Welcome Back" styleClass="title"/>
+            <Label text="Sign in to your ERP System" styleClass="subtitle"/>
+        </VBox>
+        
+            
+            <VBox alignment="CENTER_LEFT" spacing="10" styleClass="form-fields">
+                <Label text="Email Address" styleClass="label"/>
+                <TextField fx:id="usernameField" promptText="Enter your email" styleClass="input"/>
+                
+                <HBox alignment="CENTER_LEFT" spacing="5">
+                    <Label text="Password r" styleClass="label"/>
+                </HBox>
+                <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="input"/>
+                
+                <CheckBox text="Remember me" styleClass="remember-check"/>
+                
+                <Button text="Sign In" onAction="#handleLogin" styleClass="login-button"/>
+                
+                <HBox alignment="CENTER" spacing="5">
+                    <Label text="Don't have an account?" styleClass="footer-text"/>
+                    <Button  text="Sign up" onAction= "#changeToSignup" styleClass="footer-button"/>
+                </HBox>
+            </VBox>
+            
+            <Label fx:id="errorLabel" styleClass="error-label"/>
+        </VBox>   
+    </StackPane>
