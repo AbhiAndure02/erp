@@ -1,0 +1,249 @@
+/* Root background with gradient animation */
+.login-root {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-size: 400% 400%;
+    -fx-animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        -fx-background-position: 0% 50%;
+    }
+    50% {
+        -fx-background-position: 100% 50%;
+    }
+    100% {
+        -fx-background-position: 0% 50%;
+    }
+}
+
+/* The login box card */
+.login-box {
+    -fx-padding: 40 50 30 50;
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 20, 0.2, 0, 5);
+    -fx-spacing: 20;
+    -fx-min-width: 450;
+    -fx-max-width: 450;
+}
+
+/* Form fields container */
+.form-fields {
+    -fx-min-width: 350;
+    -fx-padding: 10 0 0 0;
+}
+
+/* Title styling */
+/* Title styling */
+.title {
+    -fx-font-size: 32px;  /* Increased from 28px */
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-alignment: center;
+    -fx-padding: 0 0 5 0; /* Added padding */
+}
+
+/* Subtitle below the title */
+.subtitle {
+    -fx-font-size: 16px;  /* Increased from 14px */
+    -fx-text-fill: #7f8c8d;
+    -fx-padding: 0 0 20 0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-alignment: center;
+    -fx-font-style: italic; /* Optional style change */
+}
+
+/* Field label */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #555;
+    -fx-font-weight: 600;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Input fields */
+.input {
+    -fx-pref-width: 350;
+    -fx-pref-height: 40;
+    -fx-padding: 0 15;
+    -fx-background-radius: 8;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 8;
+    -fx-border-width: 1.5;
+    -fx-background-color: #f9f9f9;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.input:focused {
+    -fx-border-color: #2575fc;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(37, 117, 252, 0.2), 10, 0.5, 0, 0);
+}
+
+/* Login button */
+.login-button {
+    -fx-background-color: linear-gradient(to right, #2575fc, #6a11cb);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 12 0;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-pref-width: 350;
+    -fx-effect: dropshadow(gaussian, rgba(37, 117, 252, 0.4), 10, 0.5, 0, 2);
+}
+
+.login-button:hover {
+    -fx-background-color: linear-gradient(to right, #1a5edc, #5a0cb1);
+}
+
+.login-button:pressed {
+    -fx-translate-y: 1;
+}
+
+/* Forgot password button */
+.forgot-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 12px;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.forgot-button:hover {
+    -fx-text-fill: #2575fc;
+    -fx-underline: true;
+}
+
+/* Remember me checkbox */
+.remember-check {
+    -fx-text-fill: #555;
+    -fx-font-size: 13px;
+    -fx-padding: 10 0 15 0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.remember-check .box {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 4;
+}
+
+.remember-check:selected .mark {
+    -fx-background-color: #2575fc;
+}
+
+/* Footer text */
+.footer-text {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2575fc;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-button:hover {
+    -fx-underline: true;
+}
+
+/* Error message */
+.error-label {
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 13px;
+    -fx-padding: 5 0 0 0;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-alignment: center;
+}
+.root {
+    -fx-font-family: 'Segoe UI', Arial;
+    -fx-background-color: #f5f7fa;
+}
+
+.header-label {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 1);
+}
+
+.input-label {
+    -fx-text-fill: #555;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-pref-height: 40;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 0, 2, 0, 0);
+}
+
+.text-field:focused {
+    -fx-border-color: #3a7bd5;
+    -fx-effect: dropshadow(three-pass-box, rgba(58,123,213,0.2), 0, 4, 0, 0);
+}
+
+.signup-button {
+    -fx-background-color: linear-gradient(to right, #3a7bd5, #00d2ff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5;
+    -fx-padding: 12 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.signup-button:hover {
+    -fx-background-color: linear-gradient(to right, #2c65c0, #00c2ff);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 8, 0, 0, 3);
+}
+
+.message-label {
+    -fx-font-size: 13px;
+    -fx-padding: 5 0;
+    -fx-wrap-text: true;
+    -fx-max-width: 340px;
+}
+
+.error-label {
+    -fx-text-fill: #e74c3c;
+}
+
+.success-label {
+    -fx-text-fill: #2ecc71;
+}
+
+.footer-label {
+    -fx-text-fill: #777;
+    -fx-font-size: 13px;
+}
+
+.footer-link {
+    -fx-text-fill: #3a7bd5;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+.footer-link:hover {
+    -fx-text-fill: #2c65c0;
+}

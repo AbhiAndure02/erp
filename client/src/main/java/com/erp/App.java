@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 public class App extends Application {
  
     private Stage primaryStage;
-
     @Override
     public void start(Stage stage) throws Exception {
         this.primaryStage = stage;
